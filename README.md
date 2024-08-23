@@ -5,9 +5,15 @@ The setup of the experiment is shown in the
 
 ## Calibrations
 ### Dark rate
-Dark rate is tested every time HV is applied. 
+Dark rate is tested every time HV is applied. A reasonable range is several hundreds of Hertz. 
+
 ### Polariser transmission ratio
+Data is stored in the laboratory's server, analysised by ![this notebook](https://github.com/Chocolirz/RELICS_PMT_Data_Analysis/blob/main/PolariserCheck/check_readout.ipynb).
+
 ### Linearity
+To find out the minimum energy for saturation, we tested the linearity of our PMT by comparing the pulse area of two PMTs. 
+
+Data was analysised by 
 ## Tests
 ### Time constant of recharge
 ### Dynode readout
