@@ -19,7 +19,7 @@ change file name with ```vi DAW_Config.txt``` check trigger(adc), date, PMT id n
     press ```s``` to start / stop counting
     press ```q``` to quit
 
-### Analysis data
+### Analyse data
 
 To quickly analysis the results, use ```python3 /home/yjj/pmt8520/check_trigger_rate.py file_name```
 
