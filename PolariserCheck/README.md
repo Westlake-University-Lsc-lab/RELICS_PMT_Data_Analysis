@@ -42,3 +42,9 @@ To sign in, try ```su daq``` in terminal.
 Password: ```Password```
 
 ```History``` 	for command history.
+
+## Running the notebook check_readout.ipynb
+
+Except basic libraries (```numpy```, ```scipy```, ```matplotlib```, ```pandas```, ```tqdm```, etc), it also need a special library ```landaupy``` for fitting Landau distributions. 
+
+Install ```landaupy``` by running ```pip install git+https://github.com/SengerM/landaupy```, or use the manual installation on [the landaupy website](https://github.com/SengerM/landaupy), where examples and detailed guides are given.
