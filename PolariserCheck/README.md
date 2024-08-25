@@ -1,15 +1,24 @@
 # Polariser ratio test
 
-## Guide
+## Experiment instruction
 
-### Always, check hardware connection first
-### Make sure everything is in position, check the voltage.
+Always, check hardware connection first. Make sure everything is in position, check the high voltage output.
+
+Check the signal using the oscilloscope before moving to daq. 
+
+### Sign in
+
+All commands must be under the correct account: ```daq@daq-RH411```
+
+To sign in, try ```su daq``` in terminal.
+
+Password: ```Password```
+
+### Collect data
 
 go to path ```cd /etc/DAW_Demo/```
 
 to search for everything in path, use ```ls -lrth /etc/DAW_Demo/```
-
-### Start collecting data
 
 change file name with ```vi DAW_Config.txt``` check trigger(adc), date, PMT id number, LED voltage, pulse width, etc.
 
@@ -34,12 +43,6 @@ To quickly analysis the results, use
 ```python3 /home/yjj/pmt8520/check_trigger_rate.py file_name```
 
 ### Note
-
-All commands must be under the correct account: ```daq@daq-RH411```
-
-To sign in, try ```su daq``` in terminal.
-
-Password: ```Password```
 
 ```History``` 	for command history.
 
