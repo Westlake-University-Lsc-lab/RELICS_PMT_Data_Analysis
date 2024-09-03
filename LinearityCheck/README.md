@@ -10,6 +10,8 @@ This is a Python script to check the linearity of the PMT signal.
 
 The linearity check will be performed with identical setups and conditions, therefore there's no need to repeat [the instructions before](https://github.com/Westlake-University-Lsc-lab/RELICS_PMT_Data_Analysis/blob/main/PolariserCheck/README.md). 
 
+We used several $6\ {\rm dB}$ attenuators (voltage dividers) to reduce the amplitude and avoid ADC saturation. Theoretically, this allows us to measure signals up to $128\ {\rm V}$ with the same percentage error. The next step is therefore to simulate high-energy signals and check the linearity to see when PMT starts to saturate. 
+
 ## New factors
 
 Dynode readout, which was collected in CH2, will appear here and be examined in detail for later tests. 
