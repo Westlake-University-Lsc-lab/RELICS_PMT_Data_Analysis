@@ -10,11 +10,17 @@ This is a Python script to check the linearity of the PMT signal.
 
 The linearity check will be performed with identical setups and conditions, therefore there's no need to repeat [the instructions before](https://github.com/Westlake-University-Lsc-lab/RELICS_PMT_Data_Analysis/blob/main/PolariserCheck/README.md). 
 
-We used several $3\ {\rm dB}$ attenuators (voltage dividers) to reduce the amplitude and avoid ADC saturation. Theoretically, this allows us to measure signals up to $64\ {\rm V}$ with the same percentage error. The next step is therefore to simulate high-energy signals and check the linearity to see when PMT starts to saturate. 
+We used several $3\ {\rm dB}$ attenuators (voltage dividers) to reduce the amplitude and avoid ADC saturation. Theoretically, this allows us to measure signals up to $64\ {\rm V}$ with the same percentage error. The next step is therefore to simulate high-energy signals and check the linearity to see when PMT starts to saturate. Theoretically, the transformation between dB and ratio is:
 
-${\rm dB} = 20\log_{10}\left(\frac{V_2}{V_1}\right)$
+${\rm dB} = 20\log_{10}\left(\frac{V_2}{V_1}\right).$
 
-For the $100\ {\rm ns}$ pulse width, we observed saturation around an area of $6000\ {\rm PEs}$, which is exactly the range we expected. Later we will increase the pulse width to $300\ {\rm ns}$ and see if the linearity is reduced.
+In RELICS experiment, the pulse width of a typicall top-entry muon signal should be in the range of $50\sim 100\ {\rm ns}$. For the $100\ {\rm ns}$ pulse width, we observed saturation around perhaps $2500\ {\rm PEs}$, which is exactly the range we expected. 
+
+## Problems
+
+One problem is that the CH1/CH0 area ratio rises significantly each time we repeat the experiment at a higher energy. We have checked that the setup has hot changed and everything is still working fine. Therefore the problem may be related to our poor understanding of the attenuators. 
+
+Another problem is that the dynode readout is not yet implemented in the script. Mainly because we haven't found a proper way to decide the integration range of the dynode signals. We will need to implement it in the future.
 
 ## New factors
 
