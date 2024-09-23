@@ -1,4 +1,4 @@
-V ns dB CH0with errCH0 CH1 errCH1 dB
+V ns dB CH0 errCH0 CH1 errCH1 dB
 1.7 13 17.93 4.57 0.35 0.8 0
 1.7 13.5 31.83 6.09 0.62 0.96 0
 1.7 14 52.42 7.8 1.02 1.17 0
