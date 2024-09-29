@@ -16,15 +16,9 @@ ${\rm dB} = 20\log_{10}\left(\frac{V_2}{V_1}\right).$
 
 In RELICS experiment, the pulse width of a typicall top-entry muon signal should be in the range of $50\sim 100\ {\rm ns}$. For the $100\ {\rm ns}$ pulse width, we observed saturation around perhaps $2500\ {\rm PEs}$, which is exactly the range we expected. 
 
-## Problems
+## Results
 
-One problem is that the CH1/CH0 area ratio rises significantly each time we repeat the experiment at a higher energy. We have checked that the setup has hot changed and everything is still working fine. Therefore the problem may be related to our poor understanding of the attenuators. 
-
-Another problem is that the dynode readout is not yet implemented in the script. Mainly because we haven't found a proper way to decide the integration range of the dynode signals. We will need to implement it in the future.
-
-## New factors
-
-Dynode readout, which was collected in CH2, will appear here and be examined in detail for later tests. 
+Calibration data using crossed polars and dynode readout (collected on September 24th 2024) were both normalised to $1$ and then presented in [one single plot](https://github.com/Westlake-University-Lsc-lab/RELICS_PMT_Data_Analysis/blob/main/LinearityCheck/img/final.png). The linearity relation obtained from both ways is "almost" the same (still needs quantitative comparison). For $100\ {\rm ns}$ pulse width, the linearity was preserved until $2500\ {\rm PEs}$, and then the signal starts to saturate. Measureing the saturation time constant is the next step of our research. 
 
 ## Further
 
